@@ -10,22 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GalleryPlaces">
         <activity
-            android:name=".AddPlaceActivity"
-            android:label="Add Place"
-            android:screenOrientation="portrait"
-            android:exported="true"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
-        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.GalleryPlaces.NoActionBar">
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".AddPlaceActivity"
+            android:label="Add Place"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/CustomNoActionBarTheme"/>
+
     </application>
 
 </manifest>
